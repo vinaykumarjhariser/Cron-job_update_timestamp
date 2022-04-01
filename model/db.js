@@ -9,25 +9,19 @@ mongoose.connect('mongodb://localhost:27017/CronJob', {
     console.log("Connection Fail");
 })
 
-
-
 //Schema
 const CronjobSchema = new mongoose.Schema({
     firstName: {
-        type: String,
-        // required:true
+        type: String
     },
     lastName:{
-        type:String,
-        // require:true
+        type:String
     },
     age:{
-        type:Number,
-        // required:true
+        type:Number
     },
     rollNo:{
-        type:String,
-        // required:true
+        type:String
     }},
    { timestamps: true })
 
